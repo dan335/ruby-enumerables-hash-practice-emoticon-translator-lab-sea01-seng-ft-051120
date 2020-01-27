@@ -9,6 +9,7 @@ def load_library(path)
     h[:get_meaning][meaning] = value[1]
   end
   
+  pp h
   
   h
 end
