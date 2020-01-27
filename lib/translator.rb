@@ -5,6 +5,9 @@ def load_library(path)
   pp emoticons
   h = {:get_meaning => {}, :get_emoticon => {}}
   
+  emoticons.each do |meaning, value|
+    h[:get_meaning][meaning] = value[1]
+  end
   
   
   h
