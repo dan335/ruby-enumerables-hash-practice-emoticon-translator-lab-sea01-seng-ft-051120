@@ -16,6 +16,10 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticons = load_library(path)
   
+  if !emoticons[:get_emoticon].key?(emoticon)
+    return "Sorry, not found."
+  end
+  
   emoticons[:get_emoticon][emoticon]
 end
 
